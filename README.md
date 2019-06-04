@@ -5,7 +5,12 @@ This is a module to handle CORS for Go web API or Web Server.
 ## Usage
 
 ```go
-import goCors "github.com/mattdamon108/go-cors"
+import (
+	"encoding/json"
+	"net/http"
+
+	goCors "github.com/mattdamon108/go-cors"
+)
 
 func main() {
 	mux := http.NewServeMux()
